@@ -1,0 +1,7 @@
+<h1>School Classes Index Page</h1>
+<%@schoolclasses.each do |schoolclass| %>
+<%# link_to schoolclass.to_s, school_class_path(schoolclass) %>
+<%= link_to schoolclass.title, school_class_path(schoolclass) %><br />
+<%end %>
+<%= button_to "New School Class", new_school_class_path, :id => "open-contacts-dialog-btn",
+      :class => "inbox-sf-add-btn tip", :method => :get %>
