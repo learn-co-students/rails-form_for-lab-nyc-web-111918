@@ -1,0 +1,7 @@
+<h1>Students Classes Index Page</h1>
+<% @students.each do |student| %>
+<%= link_to student.to_s, student_path(student) %><br />
+
+<%end %><br />
+<%= button_to "New Student", new_student_path, :id => "open-contacts-dialog-btn",
+      :class => "inbox-sf-add-btn tip", :method => :get %>
