@@ -1,0 +1,6 @@
+<h1>School Index Page</h1>
+
+<% @students.each do |student| %>
+<label>First Name: </label><%= student.first_name %> <br>
+<label>Last Name: </label><%= student.last_name %>
+<% end %>
