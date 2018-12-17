@@ -1,0 +1,8 @@
+<h1> Student Edit Page</h1>
+<%= form_for @student do |f| %>
+  <%= f.label 'First Name' %>
+  <%= f.text_field :first_name, placeholder: 'First Name' %><br>
+  <%= f.label 'Last Name' %>
+  <%= f.number_field :last_name, placeholder: 'Last Name' %><br>
+  <%= f.submit "Update Studentt" %>
+<% end %>
